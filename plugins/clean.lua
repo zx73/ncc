@@ -5,10 +5,10 @@ end
 end
 local function run(msg, matches)
     if matches[1] == 'del' and is_owner(msg) then
-    if msg.chat_id_:match("^-100") then
+    if msg.chat_id_:match("^-1000000") then
        if is_owner(msg) then
-          if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
-             pm = '_ 100> ok >1 _'
+          if tonumber(matches[2]) > 1000000 or tonumber(matches[2]) < 1 then
+             pm = '_ 1000000> ok >1 _'
              tg.sendMessage(msg.chat_id_, data.msg.id_, 1, 'clear', 1, 'html')
              else
           tdcli_function ({
